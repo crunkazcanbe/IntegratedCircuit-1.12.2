@@ -1,0 +1,66 @@
+itemGroup.integrated_circuit=Integrated Circuit
+
+# Block / item names (tile.<modid>.<name>.name). ItemBlocks share the tile name.
+tile.integrated_circuit.integrated_circuit.name=Integrated Circuit
+tile.integrated_circuit.white_integrated_circuit.name=White Integrated Circuit
+tile.integrated_circuit.orange_integrated_circuit.name=Orange Integrated Circuit
+tile.integrated_circuit.magenta_integrated_circuit.name=Magenta Integrated Circuit
+tile.integrated_circuit.light_blue_integrated_circuit.name=Light Blue Integrated Circuit
+tile.integrated_circuit.yellow_integrated_circuit.name=Yellow Integrated Circuit
+tile.integrated_circuit.lime_integrated_circuit.name=Lime Integrated Circuit
+tile.integrated_circuit.pink_integrated_circuit.name=Pink Integrated Circuit
+tile.integrated_circuit.gray_integrated_circuit.name=Gray Integrated Circuit
+tile.integrated_circuit.light_gray_integrated_circuit.name=Light Gray Integrated Circuit
+tile.integrated_circuit.cyan_integrated_circuit.name=Cyan Integrated Circuit
+tile.integrated_circuit.purple_integrated_circuit.name=Purple Integrated Circuit
+tile.integrated_circuit.blue_integrated_circuit.name=Blue Integrated Circuit
+tile.integrated_circuit.brown_integrated_circuit.name=Brown Integrated Circuit
+tile.integrated_circuit.green_integrated_circuit.name=Green Integrated Circuit
+tile.integrated_circuit.red_integrated_circuit.name=Red Integrated Circuit
+tile.integrated_circuit.black_integrated_circuit.name=Black Integrated Circuit
+
+# Fallback item.* keys (in case the ItemBlock resolves the item domain)
+item.integrated_circuit.integrated_circuit.name=Integrated Circuit
+item.integrated_circuit.white_integrated_circuit.name=White Integrated Circuit
+item.integrated_circuit.orange_integrated_circuit.name=Orange Integrated Circuit
+item.integrated_circuit.magenta_integrated_circuit.name=Magenta Integrated Circuit
+item.integrated_circuit.light_blue_integrated_circuit.name=Light Blue Integrated Circuit
+item.integrated_circuit.yellow_integrated_circuit.name=Yellow Integrated Circuit
+item.integrated_circuit.lime_integrated_circuit.name=Lime Integrated Circuit
+item.integrated_circuit.pink_integrated_circuit.name=Pink Integrated Circuit
+item.integrated_circuit.gray_integrated_circuit.name=Gray Integrated Circuit
+item.integrated_circuit.light_gray_integrated_circuit.name=Light Gray Integrated Circuit
+item.integrated_circuit.cyan_integrated_circuit.name=Cyan Integrated Circuit
+item.integrated_circuit.purple_integrated_circuit.name=Purple Integrated Circuit
+item.integrated_circuit.blue_integrated_circuit.name=Blue Integrated Circuit
+item.integrated_circuit.brown_integrated_circuit.name=Brown Integrated Circuit
+item.integrated_circuit.green_integrated_circuit.name=Green Integrated Circuit
+item.integrated_circuit.red_integrated_circuit.name=Red Integrated Circuit
+item.integrated_circuit.black_integrated_circuit.name=Black Integrated Circuit
+
+# GUI
+integrated_circuit.gui.screen_title=Integrated Circuit Designer
+integrated_circuit.gui.rename_field_placeholder=Enter circuit name...
+
+# Component palette / hover names (integrated_circuit.component.<modid>.<name>)
+integrated_circuit.component.integrated_circuit.air=Air
+integrated_circuit.component.integrated_circuit.block=Block
+integrated_circuit.component.integrated_circuit.wire=Wire
+integrated_circuit.component.integrated_circuit.torch=Torch
+integrated_circuit.component.integrated_circuit.repeater=Repeater
+integrated_circuit.component.integrated_circuit.comparator=Comparator
+integrated_circuit.component.integrated_circuit.observer=Observer
+integrated_circuit.component.integrated_circuit.target=Target
+integrated_circuit.component.integrated_circuit.redstone_block=Redstone Block
+integrated_circuit.component.integrated_circuit.port=Port
+integrated_circuit.component.integrated_circuit.crossover=Crossover
+integrated_circuit.component.integrated_circuit.lever=Lever
+integrated_circuit.component.integrated_circuit.stone_button=Stone Button
+integrated_circuit.component.integrated_circuit.wooden_button=Wooden Button
+integrated_circuit.component.integrated_circuit.lamp=Lamp
+integrated_circuit.component.integrated_circuit.lectern=Lectern
+integrated_circuit.component.integrated_circuit.copper_bulb=Copper Bulb
+
+# Port input/output labels
+integrated_circuit.component.integrated_circuit.port_output=Output
+integrated_circuit.component.integrated_circuit.port_input=Input

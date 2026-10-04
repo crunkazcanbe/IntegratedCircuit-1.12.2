@@ -1,0 +1,17 @@
+[
+  {
+    "modid": "integrated_circuit",
+    "name": "Integrated Circuit",
+    "description": "Build redstone circuits on a 2D grid inside a block. Backport of replaceitem's Fabric mod to 1.12.2 Forge. Original (MIT): https://github.com/replaceitem/integrated-circuit",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/replaceitem/integrated-circuit",
+    "authorList": [
+      "replaceitem (original author)"
+    ],
+    "credits": "Original Fabric mod by replaceitem (MIT License). 1.12.2 Forge backport.",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

@@ -1,0 +1,66 @@
+// Integrated Circuit — backport of replaceitem's Fabric mod (MC 26.2) to 1.12.2 Forge.
+// Original: https://github.com/replaceitem/integrated-circuit  (MIT License, (c) 2022 replaceitem)
+// FG3 + JDK8 build toolchain (runs on Cleanroom/Java25).
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'eclipse'
+
+tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
+
+version = '1.6.9'
+group = 'net.replaceitem'
+archivesBaseName = 'integratedcircuit-1.12.2'
+
+sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
+
+minecraft {
+    mappings channel: 'snapshot', version: '20171003-1.12'
+    runs {
+        client { workingDirectory project.file('run') }
+        server { workingDirectory project.file('run') }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'mcversion', '1.12.2'
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version, 'mcversion': '1.12.2'
+    }
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
+
+jar {
+    manifest {
+        attributes([
+            'Specification-Title'   : 'integratedcircuit',
+            'Specification-Vendor'  : 'replaceitem',
+            'Specification-Version' : '1',
+            'Implementation-Title'  : project.name,
+            'Implementation-Version': "${version}",
+            'Implementation-Vendor' : 'replaceitem'
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
